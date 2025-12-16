@@ -34,8 +34,8 @@ const Header = ({ activePage }: HeaderProps) => {
             </Link>
           </li>
           <li>
-            <a 
-              href="#trend" 
+            <Link 
+              to="/trend" 
               className={`transition-colors duration-200 ${
                 activePage === "trend" 
                   ? "text-primary" 
@@ -43,7 +43,7 @@ const Header = ({ activePage }: HeaderProps) => {
               }`}
             >
               Trend
-            </a>
+            </Link>
           </li>
           <li>
             <a 
