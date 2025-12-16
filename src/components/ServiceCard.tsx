@@ -17,7 +17,7 @@ const ServiceCard = ({
 }: ServiceCardProps) => {
   return (
     <article 
-      className="flex flex-col animate-fade-in"
+      className="flex flex-col animate-fade-in max-w-[320px]"
       style={{ animationDelay: `${animationDelay}ms` }}
     >
       {/* Card Image */}
@@ -25,7 +25,7 @@ const ServiceCard = ({
         <img 
           src={image} 
           alt={imageAlt} 
-          className="w-full aspect-square object-cover rounded-lg"
+          className="w-full max-w-[320px] aspect-square object-cover rounded-lg"
           loading="lazy"
         />
       </div>
