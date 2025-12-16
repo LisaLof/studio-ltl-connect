@@ -1,16 +1,16 @@
 const Footer = () => {
   return (
     <footer className="w-full px-6 md:px-12 py-12 mt-8 border-t border-border">
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
         <div className="font-body text-body text-foreground">
           <p className="font-medium mb-1">Studio LTL</p>
-          <p className="text-muted-foreground">Designstudio | Trend | Branding</p>
+          <p className="text-muted-foreground leading-none">Designstudio | Trend | Branding</p>
         </div>
         
         {/* Social Media Icons - Non-clickable placeholders */}
         <div className="flex items-center gap-4">
           {/* LinkedIn Icon */}
-          <span className="text-primary" aria-label="LinkedIn">
+          <span className="text-muted-foreground" aria-label="LinkedIn">
             <svg 
               width="20" 
               height="20" 
@@ -23,7 +23,7 @@ const Footer = () => {
           </span>
           
           {/* Instagram Icon */}
-          <span className="text-primary" aria-label="Instagram">
+          <span className="text-muted-foreground" aria-label="Instagram">
             <svg 
               width="20" 
               height="20" 
