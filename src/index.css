@@ -6,7 +6,7 @@
 @layer base {
   :root {
     /* Brand Colors - Scandinavian Teal Palette */
-    --background: 40 33% 95%; /* #F0E9DA cream background */
+    --background: 0 0% 100%; /* Pure white #FFFFFF */
     --foreground: 204 32% 20%; /* Dark teal-gray for text */
 
     --card: 40 33% 95%;

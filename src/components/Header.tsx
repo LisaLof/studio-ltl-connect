@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom";
 import headerLogo from "@/assets/header-logo.jpg";
 
-const Header = () => {
+interface HeaderProps {
+  activePage?: "designstudio" | "om-studio-ltl" | "trend" | "branding";
+}
+
+const Header = ({ activePage }: HeaderProps) => {
   return (
     <header className="w-full">
       {/* Logo Banner */}
@@ -17,17 +22,25 @@ const Header = () => {
       <nav className="w-full bg-background py-4 px-6 md:px-12">
         <ul className="flex gap-8 font-body text-menu text-foreground">
           <li>
-            <a 
-              href="#om-studio-ltl" 
-              className="hover:text-primary transition-colors duration-200"
+            <Link 
+              to="/om-studio-ltl" 
+              className={`transition-colors duration-200 ${
+                activePage === "om-studio-ltl" 
+                  ? "text-primary" 
+                  : "hover:text-primary"
+              }`}
             >
               Om Studio LTL
-            </a>
+            </Link>
           </li>
           <li>
             <a 
               href="#trend" 
-              className="hover:text-primary transition-colors duration-200"
+              className={`transition-colors duration-200 ${
+                activePage === "trend" 
+                  ? "text-primary" 
+                  : "hover:text-primary"
+              }`}
             >
               Trend
             </a>
@@ -35,7 +48,11 @@ const Header = () => {
           <li>
             <a 
               href="#branding" 
-              className="hover:text-primary transition-colors duration-200"
+              className={`transition-colors duration-200 ${
+                activePage === "branding" 
+                  ? "text-primary" 
+                  : "hover:text-primary"
+              }`}
             >
               Branding
             </a>

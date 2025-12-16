@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Header activePage="designstudio" />
       <main>
         <HeroSection />
         <ServicesSection />
