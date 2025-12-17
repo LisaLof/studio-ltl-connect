@@ -46,8 +46,8 @@ const Header = ({ activePage }: HeaderProps) => {
             </Link>
           </li>
           <li>
-            <a 
-              href="#branding" 
+            <Link 
+              to="/branding" 
               className={`transition-colors duration-200 ${
                 activePage === "branding" 
                   ? "text-primary" 
@@ -55,7 +55,7 @@ const Header = ({ activePage }: HeaderProps) => {
               }`}
             >
               Branding
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
