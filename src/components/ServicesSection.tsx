@@ -10,18 +10,21 @@ const ServicesSection = () => {
       imageAlt: "Designer arbetar med branding och visuell identitet på dator",
       title: "Branding & Designpaket",
       description: "En komplett visuell grund för företag som vill ta sitt uttryck på allvar. Du får logotyp, färgpalett, typografi, formspråk och visuella exempel som ger ditt företag en professionell och sammanhållen identitet.",
+      linkTo: "/branding",
     },
     {
       image: cardTrend,
       imageAlt: "Moodboard med trendiga färgprover, material och botaniska element",
       title: "Trend & Visuell Inspiration",
       description: "Lättillgängliga trendrapporter och visuella riktningar för dig som vill arbeta mer medvetet och planerat. Färgpaletter, moodboards och insikter för att stärka dina kreativa beslut, säsong för säsong.",
+      linkTo: "/trend",
     },
     {
       image: cardContact,
       imageAlt: "Studio LTL kontor med retro telefon",
       title: "Hör av dig!",
       description: "Har du frågor eller vill boka ett möte? Du är varmt välkommen att höra av dig. Jag hjälper gärna till att hitta rätt tjänst för ditt företag.",
+      linkTo: "/om-studio-ltl",
     },
   ];
 
@@ -42,6 +45,7 @@ const ServicesSection = () => {
             title={service.title}
             description={service.description}
             animationDelay={index * 100}
+            linkTo={service.linkTo}
           />
         ))}
       </div>
