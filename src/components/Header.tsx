@@ -9,14 +9,14 @@ const Header = ({ activePage }: HeaderProps) => {
   return (
     <header className="w-full">
       {/* Logo Banner */}
-      <div className="w-full">
+      <Link to="/" className="block w-full">
         <img 
           src={headerLogo} 
           alt="Studio LTL" 
           className="w-full h-auto object-cover"
           loading="eager"
         />
-      </div>
+      </Link>
       
       {/* Navigation */}
       <nav className="w-full bg-background py-4 px-6 md:px-12">
