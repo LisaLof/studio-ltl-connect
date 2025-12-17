@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface ServiceCardProps {
   image: string;
   imageAlt: string;
@@ -5,6 +7,7 @@ interface ServiceCardProps {
   description: string;
   buttonText?: string;
   animationDelay?: number;
+  linkTo?: string;
 }
 
 const ServiceCard = ({ 
@@ -13,7 +16,8 @@ const ServiceCard = ({
   title, 
   description, 
   buttonText = "Läs mer",
-  animationDelay = 0 
+  animationDelay = 0,
+  linkTo
 }: ServiceCardProps) => {
   return (
     <article 
@@ -42,11 +46,20 @@ const ServiceCard = ({
       
       {/* CTA Button */}
       <div>
-        <button 
-          className="font-body font-medium text-button bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary-hover transition-colors duration-200"
-        >
-          {buttonText}
-        </button>
+        {linkTo ? (
+          <Link 
+            to={linkTo}
+            className="inline-block font-body font-medium text-button bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary-hover transition-colors duration-200"
+          >
+            {buttonText}
+          </Link>
+        ) : (
+          <button 
+            className="font-body font-medium text-button bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary-hover transition-colors duration-200"
+          >
+            {buttonText}
+          </button>
+        )}
       </div>
     </article>
   );
