@@ -2,6 +2,9 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 const NotFound = () => {
+  useEffect(() => {
+    document.title = "Sidan hittades inte | Studio LTL";
+  }, []);
   const location = useLocation();
 
   useEffect(() => {
