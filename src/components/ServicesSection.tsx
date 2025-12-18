@@ -31,7 +31,7 @@ const ServicesSection = () => {
   return (
     <section className="w-full px-6 md:px-12 py-16">
       {/* Section Headline */}
-      <h2 className="font-heading font-semibold text-h2 text-primary mb-12">
+      <h2 className="font-heading font-semibold text-h2 text-foreground mb-12">
         Tjänster jag erbjuder
       </h2>
       
