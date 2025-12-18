@@ -1,9 +1,17 @@
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import aboutHero from "@/assets/about-hero.webp";
 import contactCard from "@/assets/contact-card.jpg";
 
 const OmStudioLTL = () => {
+  useEffect(() => {
+    document.title = "Om Studio LTL | Kontakt";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Lär känna Studio LTL och grundaren Lisa Löfgren. Boka ett möte för branding, design eller trendinsikter.");
+    }
+  }, []);
   return (
     <div className="min-h-screen bg-background">
       <Header activePage="om-studio-ltl" />

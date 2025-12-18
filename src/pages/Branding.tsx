@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -5,6 +6,13 @@ import brandingEra from "@/assets/branding-era.jpg";
 import brandingSerenzia from "@/assets/branding-serenzia.jpg";
 
 const Branding = () => {
+  useEffect(() => {
+    document.title = "Branding Bas | Studio LTL";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Branding Bas är ett komplett grundpaket för företag som vill lansera med en tydlig och professionell visuell identitet.");
+    }
+  }, []);
   return (
     <div className="min-h-screen bg-background">
       <Header activePage="branding" />

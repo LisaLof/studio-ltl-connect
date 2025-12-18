@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -11,6 +12,13 @@ import trendCardHostVinter from "@/assets/trend-card-host-vinter-2027.jpg";
 import trendCardVarSommar from "@/assets/trend-card-var-sommar-2027.jpg";
 
 const Trend = () => {
+  useEffect(() => {
+    document.title = "Trend & Inspiration Light | Studio LTL";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Trendrapporter i PDF-format med färgpaletter, moodboards och visuella riktningar för företag som vill arbeta medvetet med färg och stil.");
+    }
+  }, []);
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
