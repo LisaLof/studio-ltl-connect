@@ -21,18 +21,18 @@ const Branding = () => {
         </section>
 
         {/* Editorial Images Section */}
-        <section className="py-8">
+        <section className="py-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <img 
               src={brandingEra} 
               alt="Branding example - ERA Clothing" 
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto rounded-lg border border-[#828282]"
               loading="lazy"
             />
             <img 
               src={brandingSerenzia} 
               alt="Branding example - Serenzia Konsult" 
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto rounded-lg border border-[#828282]"
               loading="lazy"
             />
           </div>
