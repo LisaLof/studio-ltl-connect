@@ -33,13 +33,13 @@ const Branding = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <img 
               src={brandingEra} 
-              alt="Branding example - ERA Clothing" 
+              alt="Visuell identitet för ERA Clothing – logotyp och förpackningsdesign i minimalistisk stil"
               className="w-full h-auto rounded-lg border border-[#828282]"
               loading="lazy"
             />
             <img 
               src={brandingSerenzia} 
-              alt="Branding example - Serenzia Konsult" 
+              alt="Visuell identitet för Serenzia Konsult – visitkort och varumärkesmaterial i elegant design"
               className="w-full h-auto rounded-lg border border-[#828282]"
               loading="lazy"
             />

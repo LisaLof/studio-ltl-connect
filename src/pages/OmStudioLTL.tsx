@@ -29,7 +29,7 @@ const OmStudioLTL = () => {
           <div className="w-full max-w-3xl">
             <img 
               src={aboutHero} 
-              alt="Lisa Löfgren arbetar med färgprover och material i sin studio" 
+              alt="Lisa Löfgren, grundare av Studio LTL, arbetar med färgprover och materialprov i sin kreativa studio"
               className="w-full h-auto object-cover rounded-lg"
               loading="eager"
             />
@@ -62,7 +62,7 @@ const OmStudioLTL = () => {
             <div>
               <img 
                 src={contactCard} 
-                alt="Studio LTL kontor med orange retro telefon" 
+                alt="Arbetsplats hos Studio LTL med orange retrotelefon, färgprover och kreativa material"
                 className="w-full h-auto object-cover rounded-lg"
                 loading="lazy"
               />
