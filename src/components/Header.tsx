@@ -12,7 +12,7 @@ const Header = ({ activePage }: HeaderProps) => {
       <Link to="/" className="block w-full">
         <img 
           src={headerLogo} 
-          alt="Studio LTL" 
+          alt="Studio LTL logotyp – designstudio för branding och trender"
           className="w-full h-auto object-cover"
           loading="eager"
         />

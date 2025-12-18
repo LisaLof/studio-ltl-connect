@@ -55,11 +55,11 @@ const Trend = () => {
               className="group cursor-pointer focus:outline-none"
             >
               <div className="rounded-lg overflow-hidden border-2 border-transparent transition-colors duration-200 group-hover:border-primary">
-                <img
-                  src={trendCardJul}
-                  alt="Jul 2027 trendrapport"
-                  className="w-full aspect-square object-cover"
-                  loading="lazy"
+                  <img
+                    src={trendCardJul}
+                    alt="Förhandsvisning av trendrapport Jul 2027 – varma jultoner och stämningsfulla detaljer"
+                    className="w-full aspect-square object-cover"
+                    loading="lazy"
                 />
               </div>
               <p className="font-body text-body text-foreground mt-3 text-left">Jul 2027</p>
@@ -70,11 +70,11 @@ const Trend = () => {
               className="group cursor-pointer focus:outline-none"
             >
               <div className="rounded-lg overflow-hidden border-2 border-transparent transition-colors duration-200 group-hover:border-primary">
-                <img
-                  src={trendCardHostVinter}
-                  alt="Höst/Vinter 2027 trendrapport"
-                  className="w-full aspect-square object-cover"
-                  loading="lazy"
+                  <img
+                    src={trendCardHostVinter}
+                    alt="Förhandsvisning av trendrapport Höst/Vinter 2027 – naturnära färger och texturer"
+                    className="w-full aspect-square object-cover"
+                    loading="lazy"
                 />
               </div>
               <p className="font-body text-body text-foreground mt-3 text-left">Höst/Vinter 2027</p>
@@ -85,11 +85,11 @@ const Trend = () => {
               className="group cursor-pointer focus:outline-none"
             >
               <div className="rounded-lg overflow-hidden border-2 border-transparent transition-colors duration-200 group-hover:border-primary">
-                <img
-                  src={trendCardVarSommar}
-                  alt="Sommar/Vår 2027 trendrapport"
-                  className="w-full aspect-square object-cover"
-                  loading="lazy"
+                  <img
+                    src={trendCardVarSommar}
+                    alt="Förhandsvisning av trendrapport Sommar/Vår 2027 – fräscha pasteller och lekfull energi"
+                    className="w-full aspect-square object-cover"
+                    loading="lazy"
                 />
               </div>
               <p className="font-body text-body text-foreground mt-3 text-left">Sommar/Vår 2027</p>
@@ -121,7 +121,7 @@ const Trend = () => {
           <div className="mb-8">
             <img
               src={trendJul}
-              alt="Julen 2027 trendbild"
+              alt="Moodboard för Julen 2027 – taktila material, handgjorda detaljer och klassiska julnyanser i modern tappning"
               className="w-full max-w-3xl rounded-lg animate-fade-in"
               loading="lazy"
             />
@@ -151,7 +151,7 @@ const Trend = () => {
           <div className="mb-8">
             <img
               src={trendHostVinter}
-              alt="Höst/Vinter 2027 trendbild"
+              alt="Moodboard för Höst/Vinter 2027 – naturfärgade toner, strukturer och retroinfluenser med modern estetik"
               className="w-full max-w-3xl rounded-lg animate-fade-in"
               loading="lazy"
             />
@@ -181,7 +181,7 @@ const Trend = () => {
           <div className="mb-8">
             <img
               src={trendVarSommar}
-              alt="Sommar/Vår 2027 trendbild"
+              alt="Moodboard för Sommar/Vår 2027 – fräscha toner, mjuka pasteller och optimistisk energi"
               className="w-full max-w-3xl rounded-lg animate-fade-in"
               loading="lazy"
             />
