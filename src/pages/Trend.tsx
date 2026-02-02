@@ -13,10 +13,10 @@ import trendCardVarSommar from "@/assets/trend-card-var-sommar-2027.jpg";
 
 const Trend = () => {
   useEffect(() => {
-    document.title = "Trend & Inspiration Light | Studio LTL";
+    document.title = "Trend & Inspiration Light | Trendrapporter för företag";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Trendrapporter i PDF-format med färgpaletter, moodboards och visuella riktningar för företag som vill arbeta medvetet med färg och stil.");
+      metaDescription.setAttribute("content", "Trend & Inspiration Light är koncentrerade trendrapporter i PDF-format med färgpaletter, moodboards och visuella riktningar för företag.");
     }
   }, []);
   const scrollToSection = (id: string) => {

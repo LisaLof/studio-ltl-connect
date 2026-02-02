@@ -6,10 +6,10 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Studio LTL | Visuell Design, Branding & Trender";
+    document.title = "Visuell design, branding och trendinsikter | Studio LTL";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Studio LTL hjälper företag skapa tydliga visuella uttryck som bygger förtroende, stärker varumärket och gör det enklare att växa.");
+      metaDescription.setAttribute("content", "Studio LTL är en designstudio som hjälper företag att skapa tydliga visuella uttryck genom branding, färg och trendinsikter.");
     }
   }, []);
 
