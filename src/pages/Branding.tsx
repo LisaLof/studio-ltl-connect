@@ -7,10 +7,10 @@ import brandingSerenzia from "@/assets/branding-serenzia.jpg";
 
 const Branding = () => {
   useEffect(() => {
-    document.title = "Branding Bas | Studio LTL";
+    document.title = "Branding Bas | Visuell identitet för företag";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Branding Bas är ett komplett grundpaket för företag som vill lansera med en tydlig och professionell visuell identitet.");
+      metaDescription.setAttribute("content", "Branding Bas är ett komplett grundpaket för företag som vill bygga en professionell och hållbar visuell identitet.");
     }
   }, []);
   return (

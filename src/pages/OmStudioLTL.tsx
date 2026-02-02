@@ -6,10 +6,10 @@ import contactCard from "@/assets/contact-card.jpg";
 
 const OmStudioLTL = () => {
   useEffect(() => {
-    document.title = "Om Studio LTL | Kontakt";
+    document.title = "Om Studio LTL | Branding, färg och trendinsikter";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Lär känna Studio LTL och grundaren Lisa Löfgren. Boka ett möte för branding, design eller trendinsikter.");
+      metaDescription.setAttribute("content", "Studio LTL drivs av Lisa Löfgren och erbjuder strategisk branding, färg- och trendarbete för företag som vill växa hållbart.");
     }
   }, []);
   return (
