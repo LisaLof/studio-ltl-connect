@@ -128,11 +128,13 @@ const Trend = () => {
           </div>
           <div className="font-body text-body leading-relaxed text-foreground max-w-[620px] space-y-4 mb-8">
             <p>
-              En varm och stämningsfull riktning med fokus på taktila material, handgjorda detaljer och klassiska julnyanser i modern tappning. Passar varumärken som vill bygga känsla, närhet och tradition på ett samtida sätt.
-              14 sidor.
+              En varm och stämningsfull riktning med fokus på taktila material, handgjorda detaljer och klassiska julnyanser i en modern tappning. Trenden passar varumärken som vill bygga känsla, närhet och tradition på ett samtida och genomtänkt sätt.
             </p>
             <p>
-              Rapporten beställs via kontakt. Du får information om pris, upplägg och digital leverans via mail.
+              Rapporten omfattar 14 sidor. Pris: 995 kr exkl. moms.
+            </p>
+            <p>
+              Rapporten beställs via kontakt. Du får information om upplägg och digital leverans via mail.
             </p>
           </div>
           <Link
@@ -158,11 +160,13 @@ const Trend = () => {
           </div>
           <div className="font-body text-body leading-relaxed text-foreground max-w-[620px] space-y-4 mb-8">
             <p>
-              En mer fördjupad och harmonisk säsong med naturfärgade toner, strukturer och retroinfluenser. Trenden kombinerar lugn och värme med en modern och funktionell estetik.
-              16 sidor.
+              En fördjupad och harmonisk säsong med naturfärgade toner, tydliga strukturer och inslag av retroinfluenser. Trenden kombinerar lugn och värme med en modern och funktionell estetik.
             </p>
             <p>
-              Rapporten beställs via kontakt. Du får information om pris, upplägg och digital leverans via mail.
+              Rapporten omfattar 16 sidor. Pris: 995 kr exkl. moms.
+            </p>
+            <p>
+              Rapporten beställs via kontakt. Du får information om upplägg och digital leverans via mail.
             </p>
           </div>
           <Link
@@ -188,11 +192,13 @@ const Trend = () => {
           </div>
           <div className="font-body text-body leading-relaxed text-foreground max-w-[620px] space-y-4 mb-8">
             <p>
-              En lätt, lekfull och energirik säsong med fräscha toner, mjuka pasteller och en tydlig optimism. Perfekt för företag som vill kommunicera kreativitet och ny energi.
-              13 sidor.
+              En lätt, lekfull och energirik säsong med fräscha toner, mjuka pasteller och en tydlig optimism. Perfekt för företag som vill kommunicera kreativitet, rörelse och ny energi.
             </p>
             <p>
-              Rapporten beställs via kontakt. Du får information om pris, upplägg och digital leverans via mail.
+              Rapporten omfattar 13 sidor. Pris: 995 kr exkl. moms.
+            </p>
+            <p>
+              Rapporten beställs via kontakt. Du får information om upplägg och digital leverans via mail.
             </p>
           </div>
           <Link
