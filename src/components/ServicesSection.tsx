@@ -21,7 +21,7 @@ const ServicesSection = () => {
     },
     {
       image: cardContact,
-      imageAlt: "Studio LTL kontor med retro telefon",
+      imageAlt: "Kreativ arbetsplats med orange retrotelefon och färgprover i studio",
       title: "Hör av dig!",
       description: "Har du frågor eller vill boka ett möte? Du är varmt välkommen att höra av dig. Jag hjälper gärna till att hitta rätt tjänst för ditt företag.",
       linkTo: "/om-studio-ltl",
