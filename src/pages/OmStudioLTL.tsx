@@ -47,7 +47,7 @@ const OmStudioLTL = () => {
               Studio LTL drivs av Lisa Löfgren, designer, trendkreatör och art director med lång erfarenhet från kreativa branscher. Jag hjälper företag att skapa tydliga visuella uttryck som känns genomtänkta, hållbara och relevanta över tid.
             </p>
             <p>
-              Min bakgrund finns inom produktutveckling, konceptdesign och visuellt ledarskap hos företag som IKEA, Panduro och Divine Robot. Där har jag lärt mig att kombinera strategi och estetik och att skapa material som inte bara är snyggt utan som fungerar i verkligheten.
+              Min bakgrund finns inom produktutveckling, konceptdesign och visuellt ledarskap. I dessa roller har jag lärt mig att kombinera strategi och estetik och att skapa material som inte bara är snyggt utan som fungerar i verkligheten.
             </p>
             <p>
               Studio LTL finns för företag som behöver en trygg och erfaren partner i sin visuella utveckling. Här får du en process som är strukturerad, tydlig och anpassad efter din verksamhet, oavsett om du behöver branding från grunden eller trendinspiration inför kommande säsonger.
@@ -79,10 +79,12 @@ const OmStudioLTL = () => {
               
               {/* Contact Details - NOT clickable */}
               <div className="font-body text-body text-foreground space-y-1">
-                <p>Mail: lisalofgren@live.se</p>
-                <p>telefon: +46 70 208 39 15</p>
-                <p>instagram: kommer snart</p>
-                <p>linkedin: kommer snart</p>
+                <p>Mail: info@studioltl.com</p>
+                <p>Telefon: +46 70 208 39 15</p>
+                <p className="mt-4">Följ oss gärna på</p>
+                <p>LinkedIn: https://www.linkedin.com/company/studioltl</p>
+                <p>Instagram: https://www.instagram.com/studioltl1/</p>
+                <p>Facebook: https://www.facebook.com/profile.php?id=61587497663060</p>
               </div>
             </div>
           </div>
