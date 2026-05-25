@@ -1,28 +1,18 @@
-## Problem
+## Plan
 
-The preview isn't loading. The dev server is running fine (Vite v5.4.19 ready on port 8080, no errors), so this is a configuration issue, not a source code issue.
+1. **Constrain the change to Vite configuration only**
+   - Do not edit `src/`, page components, routing definitions, images, styling, text, or navigation.
+   - Keep existing React Router routes exactly as they are, including `/trend`.
 
-Looking at `vite.config.ts`:
+2. **Fix base path handling for preview and production separately**
+   - Keep development/Lovable preview on absolute root base: `/`.
+   - Keep production/static export on relative base: `./`, so the existing `docs/` deployment behavior is preserved.
+   - Make the condition explicit and robust in `vite.config.ts` so `/trend`, `/branding`, `/om-studio-ltl`, and `/tjanster` all resolve Vite assets from the preview root instead of relative route paths.
 
-```ts
-base: "./",
-build: { outDir: 'docs' },
-```
+3. **Clean up Vite config formatting only if needed**
+   - Preserve the same plugins, dev server port, aliases, and `docs` build output.
+   - Avoid any unrelated config changes.
 
-The `base: "./"` setting was added to make the production build work as a static site under `docs/` (for GitHub Pages). However, relative base URLs break the Lovable dev preview, which serves the SPA from an iframe URL where client-side routes (`/om-studio-ltl`, `/trend`, etc.) need assets resolved from the site root, not relative to the current path. With `"./"`, asset and HMR URLs resolve incorrectly when the route isn't `/`, causing the preview to fail to load scripts.
-
-## Fix
-
-Update `vite.config.ts` to use an absolute base in dev and only the relative base for production builds:
-
-```ts
-base: mode === 'production' ? './' : '/',
-```
-
-This preserves the GitHub Pages build behavior (`docs/` output keeps relative asset paths) while restoring the standard `/` base in dev so the Lovable preview can load.
-
-## Scope
-
-- Edit only `vite.config.ts`
-- No changes to `src/`, `docs/`, `index.html`, routing, styling, content, or assets
-- Restart the dev server after the config change so Vite picks up the new base
+4. **Restart and validate the preview server**
+   - Restart Vite so the updated base path is picked up.
+   - Check server logs and verify the relevant signal: the preview should serve the app with no Vite base/asset errors when opening `/trend`.
