@@ -2,6 +2,7 @@ import ServiceCard from "./ServiceCard";
 import cardBranding from "@/assets/card-branding.jpg";
 import cardTrend from "@/assets/card-trend.jpg";
 import cardContact from "@/assets/card-contact.jpg";
+import cardTjanster from "@/assets/card-tjanster.jpg";
 
 const ServicesSection = () => {
   const services = [
