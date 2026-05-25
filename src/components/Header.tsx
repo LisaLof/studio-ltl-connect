@@ -57,6 +57,18 @@ const Header = ({ activePage }: HeaderProps) => {
               Branding
             </Link>
           </li>
+          <li>
+            <Link 
+              to="/tjanster" 
+              className={`transition-colors duration-200 ${
+                activePage === "tjanster" 
+                  ? "text-primary" 
+                  : "hover:text-primary"
+              }`}
+            >
+              Tjänster
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
