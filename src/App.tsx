@@ -25,6 +25,7 @@ const App = () => (
           <Route path="/om-studio-ltl" element={<OmStudioLTL />} />
           <Route path="/trend" element={<Trend />} />
           <Route path="/branding" element={<Branding />} />
+          <Route path="/tjanster" element={<Tjanster />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
