@@ -2,6 +2,7 @@ import ServiceCard from "./ServiceCard";
 import cardBranding from "@/assets/card-branding.jpg";
 import cardTrend from "@/assets/card-trend.jpg";
 import cardContact from "@/assets/card-contact.jpg";
+import cardTjanster from "@/assets/card-tjanster.jpg";
 
 const ServicesSection = () => {
   const services = [
@@ -25,6 +26,13 @@ const ServicesSection = () => {
       title: "Hör av dig!",
       description: "Har du frågor eller vill boka ett möte? Du är varmt välkommen att höra av dig. Jag hjälper gärna till att hitta rätt tjänst för ditt företag.",
       linkTo: "/om-studio-ltl",
+    },
+    {
+      image: cardTjanster,
+      imageAlt: "Moodboard med färgprover, materialprov och visuella referenser i studio",
+      title: "Andra tjänster",
+      description: "Strategisk visuell rådgivning för företag som vill förstå vad deras kommunikation signalerar idag och vad som bör prioriteras framåt.",
+      linkTo: "/tjanster",
     },
   ];
 
