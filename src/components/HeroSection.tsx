@@ -6,7 +6,7 @@ const HeroSection = () => {
       {/* H1 Heading with proper spacing */}
       <div className="px-6 md:px-12 pt-hero-top pb-hero-bottom">
         <h1 className="font-heading font-bold text-h1 text-foreground max-w-3xl">
-          Visuell design, branding och trender för företag som vill växa med tydlighet och stil
+          Jag hjälper företag att ta rätt visuella beslut i rätt tid
         </h1>
       </div>
       
