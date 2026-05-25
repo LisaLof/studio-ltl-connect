@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import OmStudioLTL from "./pages/OmStudioLTL";
 import Trend from "./pages/Trend";
 import Branding from "./pages/Branding";
+import Tjanster from "./pages/Tjanster";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
