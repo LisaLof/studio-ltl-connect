@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import headerLogo from "@/assets/header-logo.jpg";
 
 interface HeaderProps {
-  activePage?: "designstudio" | "om-studio-ltl" | "trend" | "branding";
+  activePage?: "designstudio" | "om-studio-ltl" | "trend" | "branding" | "tjanster";
 }
 
 const Header = ({ activePage }: HeaderProps) => {
