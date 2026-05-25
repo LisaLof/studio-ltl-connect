@@ -23,7 +23,7 @@ const HeroSection = () => {
       {/* Body Text below hero */}
       <div className="px-6 md:px-12 py-10">
         <p className="font-body text-body text-foreground max-w-body-text">
-          Jag hjälper företag skapa tydliga visuella uttryck som bygger förtroende, stärker varumärket och gör det enklare att växa. Med en kombination av design, trendanalys och strategiskt tänkande får du en grund som håller över tid – och som känns trygg att växa i.
+          Jag hjälper företag att skapa genomtänkta visuella uttryck som stärker varumärket och gör det enklare att växa med tydlighet och riktning. Genom design, trendanalys och strategiskt tänkande bygger vi en visuell grund som känns professionell, relevant och hållbar över tid.
         </p>
       </div>
     </section>
