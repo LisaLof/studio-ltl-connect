@@ -7,9 +7,11 @@ import Footer from "@/components/Footer";
 import trendJul from "@/assets/trend-jul-2027.jpg";
 import trendHostVinter from "@/assets/trend-host-vinter-2027.jpg";
 import trendVarSommar from "@/assets/trend-var-sommar-2027.jpg";
+import trendVarSommar2028 from "@/assets/trend-var-sommar-2028.jpg";
 import trendCardJul from "@/assets/trend-card-jul-2027.jpg";
 import trendCardHostVinter from "@/assets/trend-card-host-vinter-2027.jpg";
 import trendCardVarSommar from "@/assets/trend-card-var-sommar-2027.jpg";
+import trendCardVarSommar2028 from "@/assets/trend-card-var-sommar-2028.jpg";
 
 const Trend = () => {
   useEffect(() => {
@@ -50,6 +52,21 @@ const Trend = () => {
         {/* Season Overview Cards */}
         <section className="px-6 md:px-12 pb-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl">
+            <button
+              onClick={() => scrollToSection("var-sommar-2028")}
+              className="group cursor-pointer focus:outline-none"
+            >
+              <div className="rounded-lg overflow-hidden border-2 border-transparent transition-colors duration-200 group-hover:border-primary">
+                  <img
+                    src={trendCardVarSommar2028}
+                    alt="Förhandsvisning av trendrapport Sommar/Vår 2028 – naturliga material, mjuka neutrala toner och subtila digitala influenser"
+                    className="w-full aspect-square object-cover"
+                    loading="lazy"
+                />
+              </div>
+              <p className="font-body text-body text-foreground mt-3 text-left">Sommar/Vår 2028</p>
+            </button>
+
             <button
               onClick={() => scrollToSection("julen-2027")}
               className="group cursor-pointer focus:outline-none"
@@ -92,7 +109,7 @@ const Trend = () => {
                     loading="lazy"
                 />
               </div>
-              <p className="font-body text-body text-foreground mt-3 text-left">Sommar/Vår 2027</p>
+              <p className="font-body text-body text-foreground mt-3 text-left">Vår/Sommar 2027</p>
             </button>
           </div>
         </section>
@@ -111,6 +128,38 @@ const Trend = () => {
             <li>Rekommendationer för användning</li>
             <li>Cirka 14 sidor i PDF-format</li>
           </ul>
+        </section>
+
+        {/* Sommar/Vår 2028 Section */}
+        <section id="var-sommar-2028" className="px-6 md:px-12 py-16 scroll-mt-8">
+          <h2 className="font-heading font-semibold text-h2 leading-tight text-foreground mb-8">
+            Sommar/Vår 2028
+          </h2>
+          <div className="mb-8">
+            <img
+              src={trendVarSommar2028}
+              alt="Moodboard för Sommar/Vår 2028 – naturliga material, mjuka neutrala toner och subtila digitala influenser"
+              className="w-full max-w-3xl rounded-lg animate-fade-in"
+              loading="lazy"
+            />
+          </div>
+          <div className="font-body text-body leading-relaxed text-foreground max-w-[620px] space-y-4 mb-8">
+            <p>
+              En balanserad och framåtblickande säsong där naturliga material, mjuka neutrala toner och subtila digitala influenser möts. SS28 präglas av lätthet, funktion och ett lugnt skandinaviskt uttryck med fokus på hållbarhet, taktilitet och långsiktig design.
+            </p>
+            <p>
+              13 sidors. Pris 995 kr exkl. moms.
+            </p>
+            <p>
+              Rapporten beställs via kontakt. Du får information om upplägg och digital leverans via mail.
+            </p>
+          </div>
+          <Link
+            to="/om-studio-ltl"
+            className="inline-block font-body font-medium text-button bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary-hover transition-colors duration-200"
+          >
+            Beställ via kontakt
+          </Link>
         </section>
 
         {/* Julen 2027 Section */}
@@ -177,25 +226,25 @@ const Trend = () => {
           </Link>
         </section>
 
-        {/* Sommar/Vår 2027 Section */}
+        {/* Vår/Sommar 2027 Section */}
         <section id="sommar-var-2027" className="px-6 md:px-12 py-16 scroll-mt-8">
           <h2 className="font-heading font-semibold text-h2 leading-tight text-foreground mb-8">
-            Sommar/Vår 2027
+            Vår/Sommar 2027
           </h2>
           <div className="mb-8">
             <img
               src={trendVarSommar}
-              alt="Moodboard för Sommar/Vår 2027 – fräscha toner, mjuka pasteller och optimistisk energi"
+              alt="Moodboard för Vår/Sommar 2027 – fräscha toner, mjuka pasteller och optimistisk energi"
               className="w-full max-w-3xl rounded-lg animate-fade-in"
               loading="lazy"
             />
           </div>
           <div className="font-body text-body leading-relaxed text-foreground max-w-[620px] space-y-4 mb-8">
             <p>
-              En lätt, lekfull och energirik säsong med fräscha toner, mjuka pasteller och en tydlig optimism. Perfekt för företag som vill kommunicera kreativitet, rörelse och ny energi.
+              En lätt, lekfull och energirik säsong med fräscha toner, mjuka pasteller och en tydlig optimism. Perfekt för företag som vill kommunicera kreativitet och ny energi.
             </p>
             <p>
-              Rapporten omfattar 13 sidor. Pris: 995 kr exkl. moms.
+              13 sidors. Pris 299 kr exkl. moms.
             </p>
             <p>
               Rapporten beställs via kontakt. Du får information om upplägg och digital leverans via mail.
