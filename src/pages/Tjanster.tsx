@@ -144,7 +144,7 @@ const Tjanster = () => {
             to="/om-studio-ltl"
             className="inline-block font-body font-medium text-button bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary-hover transition-colors duration-200"
           >
-            Resultat via kontakt
+            Beställ via kontakt
           </Link>
         </section>
 
@@ -195,7 +195,7 @@ const Tjanster = () => {
             to="/om-studio-ltl"
             className="inline-block font-body font-medium text-button bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary-hover transition-colors duration-200"
           >
-            Resultat via kontakt
+            Beställ via kontakt
           </Link>
         </section>
       </main>
