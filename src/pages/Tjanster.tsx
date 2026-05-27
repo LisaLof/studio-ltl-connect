@@ -98,18 +98,18 @@ const Tjanster = () => {
               loading="lazy"
             />
           </div>
-          <div className="font-body text-body leading-relaxed text-foreground max-w-[620px] space-y-4 mb-8">
-            <p>
+          <div className="font-body text-body leading-relaxed text-foreground max-w-[620px] mb-8">
+            <p className="mb-4">
               För företag som vill förstå vad deras visuella uttryck signalerar idag och vilka beslut som bör prioriteras framåt.
             </p>
-            <p>
+            <p className="mb-4">
               Många företag kommunicerar olika saker i olika kanaler utan att vara medvetna om det. Det skapar otydlighet, svagare igenkänning och gör det svårare att uppfattas rätt av kunder och marknad.
             </p>
-            <p>
+            <p className="mb-4">
               Jag analyserar hur ert visuella uttryck fungerar idag, hur olika delar hänger ihop och vilka signaler ni faktiskt skickar ut. Fokus ligger på tydlighet, relevans och vilka visuella beslut som ger störst effekt framåt.
             </p>
-            <p>Analysen omfattar</p>
-            <ul className="list-disc list-inside space-y-2">
+            <p className="mb-1">Analysen omfattar</p>
+            <ul className="list-disc list-inside space-y-1 mb-4">
               <li>Visuell identitet och tonalitet</li>
               <li>Webbplats och digital närvaro</li>
               <li>Sociala medier och kommunikation</li>
@@ -117,8 +117,8 @@ const Tjanster = () => {
               <li>Helhetsintryck och konsekvens</li>
               <li>Hur uttrycket möter dagens marknad och kundförväntningar</li>
             </ul>
-            <p>Leverans</p>
-            <ul className="list-disc list-inside space-y-2">
+            <p className="mb-1">Leverans</p>
+            <ul className="list-disc list-inside space-y-1 mb-4">
               <li>2 h strategiskt uppstartsmöte</li>
               <li>Genomgång av nuvarande visuella uttryck</li>
               <li>3 huvudsakliga observationsområden</li>
@@ -126,16 +126,16 @@ const Tjanster = () => {
               <li>Prioriterad handlingslista</li>
               <li>PDF-rapport på 10–15 sidor</li>
             </ul>
-            <p>Resultat</p>
-            <p>Ni får en tydligare bild av:</p>
-            <ul className="list-disc list-inside space-y-2">
+            <p className="mb-1">Resultat</p>
+            <p className="mb-1">Ni får en tydligare bild av:</p>
+            <ul className="list-disc list-inside space-y-1 mb-4">
               <li>vad som fungerar idag</li>
               <li>vad som skapar otydlighet eller friktion</li>
               <li>vad som bör prioriteras först</li>
               <li>hur ert uttryck kan bli mer relevant, konsekvent och konkurrenskraftigt</li>
             </ul>
-            <p>Pris</p>
-            <p>Från 28 000 kr exkl. moms</p>
+            <p className="mb-1">Pris</p>
+            <p className="mb-1">Från 28 000 kr exkl. moms</p>
             <p>
               Slutpris baseras på företagets storlek, antal kontaktpunkter och analysens omfattning.
             </p>
@@ -161,15 +161,15 @@ const Tjanster = () => {
               loading="lazy"
             />
           </div>
-          <div className="font-body text-body leading-relaxed text-foreground max-w-[620px] space-y-4 mb-8">
-            <p>
+          <div className="font-body text-body leading-relaxed text-foreground max-w-[620px] mb-8">
+            <p className="mb-4">
               En fokuserad strategi-session för företag som vill skapa större tydlighet och kontinuitet i sitt visuella uttryck och sin kommunikation.
             </p>
-            <p>
+            <p className="mb-4">
               Under två timmar går vi igenom hur ni kommunicerar idag, vad som fungerar och vilka förändringar som kan göra kommunikationen tydligare, mer konsekvent och enklare att arbeta vidare med över tid.
             </p>
-            <p>Vi tittar på</p>
-            <ul className="list-disc list-inside space-y-2">
+            <p className="mb-1">Vi tittar på</p>
+            <ul className="list-disc list-inside space-y-1 mb-4">
               <li>Bildspråk och visuellt uttryck</li>
               <li>Hur bilder och innehåll används idag</li>
               <li>Storytelling och tonalitet</li>
@@ -177,18 +177,18 @@ const Tjanster = () => {
               <li>Enklare arbetssätt och mallar som sparar tid</li>
               <li>Synlighet, spridning och digital närvaro</li>
             </ul>
-            <p>Efter sessionen får ni</p>
-            <ul className="list-disc list-inside space-y-2">
+            <p className="mb-1">Efter sessionen får ni</p>
+            <ul className="list-disc list-inside space-y-1 mb-4">
               <li>En kort strategisk sammanställning</li>
               <li>Konkreta rekommendationer att börja använda direkt</li>
             </ul>
-            <p>
+            <p className="mb-4">
               Ni väljer själva om ni vill arbeta vidare internt eller ta hjälp vidare framåt.
             </p>
-            <p>Effekt</p>
-            <p>Mindre ad hoc.</p>
-            <p>Mer tydlighet, kontinuitet och riktning.</p>
-            <p>Pris</p>
+            <p className="mb-1">Effekt</p>
+            <p className="mb-1">Mindre ad hoc.</p>
+            <p className="mb-4">Mer tydlighet, kontinuitet och riktning.</p>
+            <p className="mb-1">Pris</p>
             <p>6 000 kr exkl. moms</p>
           </div>
           <Link
