@@ -1,25 +1,28 @@
-## Plan: Refresh preview for /branding
+## Summary
+Replace specific text sections in `src/pages/Branding.tsx` while preserving all HTML structure, styling, spacing, layout, and other pages.
 
-### Findings
-I inspected the Branding route end-to-end and found no code-level defect:
+## Changes
 
-- Route `/branding` is registered in `src/App.tsx` above the catch-all.
-- `src/pages/Branding.tsx` compiles cleanly (valid imports, JSX, default export).
-- Both image assets exist: `src/assets/branding-era.jpg`, `src/assets/branding-serenzia.jpg`.
-- `Header.tsx` accepts `activePage="branding"`.
-- Vite dev server is running on port 8080 with no errors in its log.
-- No console errors or failed network requests reported from the preview.
+### 1. Vad som ingår — bullet list
+- Remove hyphen from `sociala medier-mallar` → `sociala medier mallar`
 
-This means the source for `/branding` is healthy. The most likely cause of "preview not loading correctly" is a stale Vite HMR / module-graph state in the sandbox — not a code bug.
+### 2. Leverans och villkor — text update
+- Add new price line: `Pris: 14 000 kr exkl. moms (17 500 kr inkl. moms)` within the existing `<p>`/`<br />` structure
+- Replace `60 procent` → `60%`
+- Replace `40 procent` → `40%`
+- Keep the same 3-paragraph container structure and `space-y-4` spacing class
 
-### Action (preview/build handling only)
-Per your constraints (don't modify content, styling, layout, images, navigation, footer, `docs/`, assets, or generated build files), the only safe lever is to restart the Vite dev server so the preview re-mounts with a clean module graph.
+## What will NOT change
+- HTML element structure (same `<p>`, `<br />`, `<ul>`, `<ol>`, `<li>` tags)
+- Any Tailwind classes (`space-y-2`, `space-y-4`, `mb-6`, `leading-relaxed`, etc.)
+- Images, image alt texts, image sizes
+- Typography family, font sizes, colors
+- Buttons, navigation, footer
+- Layout, responsive behavior
+- Other pages
+- Hero heading "Branding Bas"
+- Section headings ("Vad som ingår", "Process", "Leverans och villkor")
+- CTA button text "Beställ via kontakt"
 
-1. Restart the Vite dev server in the sandbox (no file changes).
-2. Verify the /branding route loads by checking dev-server logs and the preview console/network for errors.
-3. If a real error surfaces after the restart (missing module, runtime exception, etc.), report it back with the exact message before changing any code — so we can decide together whether the fix still fits within your "preview/build handling only" scope.
-
-### What this will NOT touch
-- No edits to `src/pages/Branding.tsx`, `Header`, `Footer`, or any component.
-- No changes in `docs/`, `src/assets/`, `public/`, `index.html`, `vite.config.ts`, `tailwind.config.ts`, or `index.css`.
-- No content, copy, spacing, color, or routing changes.
+## File to edit
+- `src/pages/Branding.tsx` (two targeted line replacements, no full rewrite)

@@ -64,7 +64,7 @@ const Branding = () => {
             <li>Rekommenderade typsnitt för rubrik och brödtext</li>
             <li>Visitkortsmall</li>
             <li>Symbolpaket med ikoner för mail, telefon, webb och sociala medier</li>
-            <li>Fyra sociala medier-mallar för post och story</li>
+            <li>Fyra sociala medier mallar för post och story</li>
             <li>Två till fyra contentbilder eller grafiska element som etablerar formspråket</li>
           </ul>
         </section>
@@ -96,9 +96,13 @@ const Branding = () => {
               Snabb leverans inom en vecka kan väljas mot tillägg.
             </p>
             <p>
+              Pris:<br />
+              14 000 kr exkl. moms (17 500 kr inkl. moms)
+            </p>
+            <p>
               Betalningsvillkor:<br />
-              60 procent betalas vid projektstart.<br />
-              40 procent betalas vid leverans och innan originalfiler skickas.
+              60% betalas vid projektstart.<br />
+              40% betalas vid leverans och innan originalfiler skickas.
             </p>
             <p>
               Designprocessen inkluderar tre logotypförslag. Efter tredje förslaget anses uppdraget slutfört om inget annat avtalats. Vid ytterligare justeringar tillkommer debitering på 1 000 kr per timme.<br />
