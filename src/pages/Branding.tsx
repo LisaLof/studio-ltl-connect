@@ -105,7 +105,7 @@ const Branding = () => {
               40% betalas vid leverans och innan originalfiler skickas.
             </p>
             <p>
-              Designprocessen inkluderar tre logotypförslag. Efter tredje förslaget anses uppdraget slutfört om inget annat avtalats. Vid ytterligare justeringar tillkommer debitering på 1 000 kr per timme.<br />
+              Designprocessen inkluderar tre logotypförslag. Efter tredje förslaget anses uppdraget slutfört om inget annat avtalats. Vid ytterligare justeringar tillkommer debitering på <span className="whitespace-nowrap">1 000 kr per timme</span>.<br />
               Originalfiler levereras efter full betalning.
             </p>
           </div>
