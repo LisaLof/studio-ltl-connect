@@ -1,36 +1,25 @@
-## Plan: Update /tjanster page
+## Plan: Refresh preview for /branding
 
-Rebuild `src/pages/Tjanster.tsx` only — mirroring the Trend page UX (intro → preview cards → large detailed sections). No global styling, navigation, footer, button, layout, or docs/ changes.
+### Findings
+I inspected the Branding route end-to-end and found no code-level defect:
 
-### 1. Copy uploaded images to `src/assets/`
-- `user-uploads://ProduktbildVisuellRiktningLight.jpg` → `src/assets/tjanster-card-positionsanalys.jpg`
-- `user-uploads://ProduktbildVisuellStrategiSession.jpg` → `src/assets/tjanster-card-strategi-session.jpg`
-- `user-uploads://HeroVisuellStrategiSession.jpg` → `src/assets/tjanster-hero-positionsanalys.jpg`
-- `user-uploads://HeroVisuellVisuellStrategiSession.jpg` → `src/assets/tjanster-hero-strategi-session.jpg`
+- Route `/branding` is registered in `src/App.tsx` above the catch-all.
+- `src/pages/Branding.tsx` compiles cleanly (valid imports, JSX, default export).
+- Both image assets exist: `src/assets/branding-era.jpg`, `src/assets/branding-serenzia.jpg`.
+- `Header.tsx` accepts `activePage="branding"`.
+- Vite dev server is running on port 8080 with no errors in its log.
+- No console errors or failed network requests reported from the preview.
 
-(Hero naming follows the user's spec: positionsanalys uses HeroVisuellStrategiSession; strategi-session uses HeroVisuellVisuellStrategiSession.)
+This means the source for `/branding` is healthy. The most likely cause of "preview not loading correctly" is a stale Vite HMR / module-graph state in the sandbox — not a code bug.
 
-### 2. Rewrite `src/pages/Tjanster.tsx`
-Reuse the exact classes/spacing/animation patterns from `Trend.tsx`:
+### Action (preview/build handling only)
+Per your constraints (don't modify content, styling, layout, images, navigation, footer, `docs/`, assets, or generated build files), the only safe lever is to restart the Vite dev server so the preview re-mounts with a clean module graph.
 
-- `document.title` → `"Tjänster | Studio LTL"`, meta description updated to intro line.
-- Hero section (`px-6 md:px-12 pt-16 pb-12 animate-fade-in`):
-  - H1: **Tjänster**
-  - Intro paragraphs (verbatim, 3 paragraphs).
-- Preview-card grid (same classes as Trend cards, `grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl`, with only 2 cards):
-  - Card 1 → image `tjanster-card-positionsanalys`, label "Visuell positionsanalys", scrolls to `#visuell-positionsanalys`. Alt-text omits "bild på".
-  - Card 2 → image `tjanster-card-strategi-session`, label "Visuell strategi-session", scrolls to `#visuell-strategi-session`. Alt-text omits "bild på".
-- Section 1 `id="visuell-positionsanalys"` (same `px-6 md:px-12 py-16 scroll-mt-8` wrapper):
-  - H2 "Visuell positionsanalys"
-  - Hero image `tjanster-hero-positionsanalys` (same `w-full max-w-3xl rounded-lg animate-fade-in`)
-  - Body text verbatim (intro paragraphs, "Analysen omfattar" list, "Leverans" list, "Resultat" intro + list, "Pris" block).
-  - Button (same classes as Trend's contact button) → label **"Resultat via kontakt"** → links to `/om-studio-ltl`.
-- Section 2 `id="visuell-strategi-session"` (same wrapper):
-  - H2 "Visuell strategi-session"
-  - Hero image `tjanster-hero-strategi-session`
-  - Body text verbatim ("Vi tittar på" list, "Efter sessionen får ni" list, closing line, "Effekt" block, "Pris" block).
-  - Button **"Resultat via kontakt"** → `/om-studio-ltl`.
+1. Restart the Vite dev server in the sandbox (no file changes).
+2. Verify the /branding route loads by checking dev-server logs and the preview console/network for errors.
+3. If a real error surfaces after the restart (missing module, runtime exception, etc.), report it back with the exact message before changing any code — so we can decide together whether the fix still fits within your "preview/build handling only" scope.
 
-### Scope guarantees
-- No edits to `Header`, `Footer`, `Trend`, other pages, global CSS, Tailwind config, vite config, docs/, or generated assets.
-- All typography, color, spacing, button, and card classes copied verbatim from existing Trend implementation — no new tokens.
+### What this will NOT touch
+- No edits to `src/pages/Branding.tsx`, `Header`, `Footer`, or any component.
+- No changes in `docs/`, `src/assets/`, `public/`, `index.html`, `vite.config.ts`, `tailwind.config.ts`, or `index.css`.
+- No content, copy, spacing, color, or routing changes.
